@@ -13,7 +13,7 @@
                     <div class="input-group">
                         <input type="hidden" name="id_barang" value="<?= $item['id_barang'] ?>">
                         <input type="number" class="form-control" name="jumlah_jual" value="<?= $item['jumlah_jual'] ?>">
-                        <button type="submit" class="btn btn-secondary">Update</button>
+                        <button type="submit" class="btn btn-warning">Update</button>
                     </div>
                 </form>
                 <h6 class="card-subtitle mb-2 text-muted"><?= "Rp " . number_format($item['subtotal'], 2, ',', '.'); ?></h6>
@@ -27,7 +27,7 @@
             <small class="text-muted">Subtotal: Rp <?= "Rp " . number_format(array_sum(array_column($cart, 'subtotal')), 2, ',', '.'); ?></small>
             <div>
                 <?php if (session()->get('cart') != NULL) : ?>
-                    <a href="/checkout"><button type="submit" class="btn btn-primary">Checkout</button></a>
+                    <a href="/checkout"><button type="submit" class="btn btn-success">Checkout</button></a>
                 <?php endif ?>
             </div>
         </div>

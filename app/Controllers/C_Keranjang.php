@@ -52,6 +52,7 @@ class C_Keranjang extends BaseController
             $cart[$id_barang] = [
                 'id_barang' => $product['id_barang'],
                 'nama_barang' => $product['nama_barang'],
+                'file_barang' => $product['file_barang'],
                 'harga_barang' => $product['harga_barang'],
                 'jumlah_jual' => $jumlah_jual,
                 'subtotal' => $jumlah_jual * $product['harga_barang']

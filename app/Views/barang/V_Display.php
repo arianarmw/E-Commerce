@@ -4,7 +4,7 @@
 <h1 class="text-center">CHRISTIAN ROID</h1>
 <br>
 
-<div class="container">
+<div class="container-fluid mx-5">
     <div class="row">
         <?php
         $nomor = 1;

@@ -36,7 +36,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url('keranjang') ?>">
-                            Cart <span class="badge bg-secondary"><?= session()->get('cart') ? array_sum(array_column(session()->get('cart'), 'kuantitas')) : 0 ?></span>
+                            Cart <span class="badge bg-secondary"><?= session()->get('cart') ? array_sum(array_column(session()->get('cart'), 'jumlah_jual')) : 0 ?></span>
                         </a>
                     </li>
                     <li class="nav-item">
